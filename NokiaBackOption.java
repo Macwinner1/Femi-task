@@ -889,68 +889,195 @@ while(back){
                     int pressTones = menuInput.nextInt(); 
  
                     switch (pressTones) { 
-                        case 1: {String ringingTone = """
+                        case 1:  
 
-				1. Ringing Tone
+		boolean back001 = true;
 
-			    """;   System.out.print(ringingTone);}
-                            break; 
-                        case 2: {String ringingVolume = """
+		{ String ringingTone = """
 
-				2. Ringing volume
+			Ringing Tone
+			0. Back
 
-			    """;   System.out.print(ringingVolume);} 
-                            break; 
-                        case 3:{String incomingCall = """
+		    """;
+		  System.out.print(ringingTone);}
+		int pressRingingTone = menuInput.nextInt();	
+	while(back001){ 
+		switch(pressRingingTone){
+			case 0: back001 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 001
 
-				3. Incoming call alert
+                        case 2:
 
-			    """;   System.out.print(incomingCall);}
-                            break; 
-                        case 4:{String composer = """
+	boolean back002 = true;
 
-				4. Composers
+		{ String ringingVolume = """
 
-				""";   System.out.print(composer);} 
-                            break; 
-                        case 5: {String messageAlert = """
+			Ringing volume
+			0. Back
 
-				5. Message alert tone
+		    """;
+		  System.out.print(ringingVolume);}
+		int pressRingingvolume = menuInput.nextInt();	
+	while(back002){ 
+		switch(pressRingingvolume){
+			case 0: back002 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 002
 
-			    """;   System.out.print(messageAlert);} 
-                            break; 
-                        case 6:{String keypadTones = """
+                        case 3:
 
-				6. Keypad tones
+		boolean back003 = true;
 
-			    """;   System.out.print(keypadTones);} 
-                            break; 
-                        case 7:{String warningAndGame = """
+		{ String incomingCall = """
 
-				7. Warning and game tones
+			Ringing volume
+			0. Back
 
-			    """;   System.out.print(warningAndGame);} 
-                            break; 
-                        case 8: {String vibratingAlert = """
+		    """;
+		  System.out.print(incomingCall);}
+		int pressIncomingCall = menuInput.nextInt();	
+	while(back003){ 
+		switch(pressIncomingCall){
+			case 0: back003 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 003
 
-				8. Vibrating alert
+                        case 4:
 
-			    """;   System.out.print(vibratingAlert);} 
-                            break; 
-                        case 9: {String screenSaver = """
+		boolean back004 = true;
 
-				9. Screen saver
+		{ String composer = """
 
-			    """;   System.out.print(screenSaver);} 
-                            break;
+			Composers
+			0. Back
 
-			case 10: {String backToTones = """
+		    """;
+		  System.out.print(composer);}
+		int pressComposers = menuInput.nextInt();	
+	while(back004){ 
+		switch(pressComposers){
+			case 0: back004 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 004
 
-				10. Back to Tones
+                        case 5:
 
-			    """;   System.out.print(backToTones);} 
-                            break;
+		boolean back005 = true;
 
+		{ String messageAlert = """
+
+			Message alert tone
+			0. Back
+
+		    """;
+		  System.out.print(messageAlert);}
+		int pressMessageAlert = menuInput.nextInt();	
+	while(back005){ 
+		switch(pressMessageAlert){
+			case 0: back005 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 005
+
+                        case 6: 
+
+		boolean back006 = true;
+
+		{ String keypadTones = """
+
+			Keypad tones
+			0. Back
+
+		    """;
+		  System.out.print(keypadTones);}
+		int pressKeypadTones = menuInput.nextInt();	
+	while(back006){ 
+		switch(pressKeypadTones){
+			case 0: back006 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 006
+
+                        case 7:
+
+		boolean back007 = true;
+
+		{ String warningAndGame = """
+
+			Warning and game tones
+			0. Back
+
+		    """;
+		  System.out.print(warningAndGame);}
+		int pressWarningAndGame = menuInput.nextInt();	
+	while(back007){ 
+		switch(pressWarningAndGame){
+			case 0: back007 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 007
+
+                        case 8:
+
+		boolean back008 = true;
+
+		{ String vibratingAlert = """
+
+			Vibrating alert
+			0. Back
+
+		    """;
+		  System.out.print(vibratingAlert);}
+		int pressVibratingAlert = menuInput.nextInt();	
+	while(back008){ 
+		switch(pressVibratingAlert){
+			case 0: back008 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 008
+ 
+                        case 9:
+
+		boolean back009 = true;
+
+		{ String screenSaver = """
+
+			Screen saver
+			0. Back
+
+		    """;
+		  System.out.print(screenSaver);}
+		int pressScreenSaver = menuInput.nextInt();	
+	while(back009){ 
+		switch(pressScreenSaver){
+			case 0: back009 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 009 
+
+			case 10: 
+
+		boolean backTo0 = true;
+
+		{ String backToTones = """
+
+			Press
+			0. You are about to go back...
+
+		    """;
+		  System.out.print(backToTones);}
+		int pressBackToTones = menuInput.nextInt();	
+	while(backTo0){ 
+		switch(pressBackToTones){
+			case 0: backTo0 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop backTo0 
 
 			default: 
                     		System.out.print("Invalid option"); 
