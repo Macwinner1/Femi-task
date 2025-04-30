@@ -217,24 +217,49 @@ while(back){
                             } 
                             break; 
                         } 
-                        case 9:{String speedDials = """
+                        case 9:
 
-				9. Speed dials
+			boolean back9 = true;
 
-			    """;   System.out.print(speedDials);} 
-                            break; 
-                        case 10:{String voiceTags = """
+		{ String speedDials = """
 
-				10. Voice tags
+			Speed dials
+			0. Back
 
-			    """;   System.out.print(voiceTags);}
-                            break; 
+		    """;
+		  System.out.print(speedDials);}
+		int pressSpeedDials = menuInput.nextInt();	
+	while(back9){ 
+		switch(pressSpeedDials){
+			case 0: back9 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 9
+
+                        case 10:
+
+			boolean back10 = true;
+
+		{ String voiceTags = """
+
+			Voice tags
+			0. Back
+
+		    """;
+		  System.out.print(voiceTags);}
+		int pressVoicetags = menuInput.nextInt();	
+	while(back10){ 
+		switch(pressVoicetags){
+			case 0: back10 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 10
+
 			case 11: System.out.print(menu + pressMenu);
                             break;
 			default: 
                     		System.out.print("Invalid option"); 
                     		break;
-
                     } 
                     break; 
                 } 
@@ -261,42 +286,117 @@ while(back){
                     int pressMessages = menuInput.nextInt(); 
  
                     switch (pressMessages) { 
-                        case 1: {String writeMessages = """
+                        case 1:  
 
-				1. Write Messages
+		boolean back1 = true;
 
-			    """;   System.out.print(writeMessages);} 
-                            break; 
-                        case 2: {String inbox = """
+		{ String writeMessages = """
 
-				2. Inbox
+			Write Messages
+			0. Back
 
-			    """;   System.out.print(inbox);} 
-                            break; 
-                        case 3:{String outbox = """
+		    """;
+		  System.out.print(writeMessages);}
+		int pressWriteMessages = menuInput.nextInt();	
+	while(back1){ 
+		switch(pressWriteMessages){
+			case 0: back1 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 1
 
-				3. Outbox
-	
-			    """;   System.out.print(outbox);} 
-                            break; 
-                        case 4:{String pictureMessages = """
+                        case 2:  
+		boolean back2 = true;
 
-				4. Picture Messages
+		{ String inbox = """
 
-			    """;   System.out.print(pictureMessages);}
-                            break; 
-                        case 5: {String templates = """
+			Inbox
+			0. Back
 
-				5. Templates
+		    """;
+		  System.out.print(inbox);}
+		int pressInbox = menuInput.nextInt();	
+	while(back2){ 
+		switch(pressInbox){
+			case 0: back2 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 2
 
-			    """;   System.out.print(templates);} 
-                            break; 
-                        case 6: {String smileys = """
+                        case 3:
 
-				6. Smileys
+			boolean back3 = true;
 
-			    """;   System.out.print(smileys);} 
-                            break; 
+		{ String outbox = """
+
+			Outbox
+			0. Back
+
+		    """;
+		  System.out.print(outbox);}
+		int pressOutbox = menuInput.nextInt();	
+	while(back3){ 
+		switch(pressOutbox){
+			case 0: back3 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 3
+
+                        case 4: 
+			boolean back4 = true;
+
+		{ String pictureMessages = """
+
+			Picture Messages
+			0. Back
+
+		    """;
+		  System.out.print(pictureMessages);}
+		int pressPictureMessages = menuInput.nextInt();	
+	while(back4){ 
+		switch(pressPictureMessages){
+			case 0: back4 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 4
+
+                        case 5: 			
+			boolean back5 = true;
+
+		{ String templates = """
+
+			Templates
+			0. Back
+
+		    """;
+		  System.out.print(templates);}
+		int pressTemplates = menuInput.nextInt();	
+	while(back5){ 
+		switch(pressTemplates){
+			case 0: back5 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 5
+
+                        case 6:
+
+			boolean back6 = true;
+
+		{ String smileys = """
+
+			Smileys
+			0. Back
+
+		    """;
+		  System.out.print(smileys);}
+		int pressSmileys = menuInput.nextInt();	
+	while(back6){ 
+		switch(pressSmileys){
+			case 0: back6 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 6
+
                         case 7: { 
                             String messageSettings = """ 
 
