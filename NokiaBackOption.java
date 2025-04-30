@@ -507,24 +507,61 @@ while(back){
                             } 
                             break; 
                         } 
-                        case 8: {String infoService = """
+                        case 8:
 
-				8. Info Service
+			boolean back8 = true;
 
-			    """;   System.out.print(infoService);} 
-                            break; 
-                        case 9: {String voiceMailboxNumber = """
+		{ String infoService = """
 
-				9. Voice mailbox number 
-	
-			    """;   System.out.print(voiceMailboxNumber);}
-                            break; 
-                        case 10: {String serviceCommand = """
+			Info Service
+			0. Back
 
-				 10. Service command editor 
+		    """;
+		  System.out.print(infoService);}
+		int pressInfoService = menuInput.nextInt();	
+	while(back8){ 
+		switch(pressInfoService){
+			case 0: back8 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 8
 
-			    """;   System.out.print(serviceCommand);} 
-                            break;
+                        case 9:
+
+		boolean back9 = true;
+
+		{ String voiceMailboxNumber = """
+
+			Voice mailbox number
+			0. Back
+
+		    """;
+		  System.out.print(voiceMailboxNumber);}
+		int pressVoiceMailboxNumber = menuInput.nextInt();	
+	while(back9){ 
+		switch(pressVoiceMailboxNumber){
+			case 0: back9 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 9
+
+                        case 10:
+		boolean back10 = true;
+
+		{ String serviceCommand = """
+
+			Service command editor
+			0. Back
+
+		    """;
+		  System.out.print(serviceCommand);}
+		int pressServiceCommand = menuInput.nextInt();	
+	while(back10){ 
+		switch(pressServiceCommand){
+			case 0: back10 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 10
 
 			case 11: {String backTomsg = """
 
@@ -540,12 +577,26 @@ while(back){
                     } 
                     break; 
                 } 
-                case 3: { String chat = """
+                case 3:
 
-			3. Chat
+		boolean back1 = true;
 
-		    """;   System.out.print(chat);}
-                    break; 
+		{ String chat = """
+
+			Chat
+			0. Back
+
+		    """;
+		  System.out.print(chat);}
+		int pressChat = menuInput.nextInt();	
+	while(back1){ 
+		switch(pressChat){
+			case 0: back1 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 1
+
+
                 case 4: { 
                     String callRegister = """ 
 
@@ -567,30 +618,83 @@ while(back){
                     int pressCallRegister = menuInput.nextInt(); 
  
                     switch (pressCallRegister) { 
-                        case 1: {String missedCalls = """
+                        case 1:
 
-				1. Missed calls
+			boolean back01 = true;
 
-			    """;   System.out.print(missedCalls);} 
-                            break; 
-                        case 2: {String receivedCalls = """
+		{ String missedCalls = """
 
-				2. Received calls
+			Missed calls
+			0. Back
 
-			    """;   System.out.print(receivedCalls);} 
-                            break; 
-                        case 3: {String dialledNumbers = """
+		    """;
+		  System.out.print(missedCalls);}
+		int pressMissedcalls = menuInput.nextInt();	
+	while(back01){ 
+		switch(pressMissedcalls){
+			case 0: back01 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 01
 
-				3. Dialled numbers
+                        case 2: 
 
-			    """;   System.out.print(dialledNumbers);} 
-                            break; 
-                        case 4: {String eraseRecentCall = """
+			boolean back2 = true;
 
-				4. Erase recent call lists
+		{ String receivedCalls = """
 
-			    """;   System.out.print(eraseRecentCall);} 
-                            break; 
+			Received calls
+			0. Back
+
+		    """;
+		  System.out.print(receivedCalls);}
+		int pressReceivedcalls = menuInput.nextInt();	
+	while(back2){ 
+		switch(pressReceivedcalls){
+			case 0: back2 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 2
+
+                        case 3:
+
+			boolean back3 = true;
+
+		{ String dialledNumbers = """
+
+			Dialled numbers
+			0. Back
+
+		    """;
+		  System.out.print(dialledNumbers);}
+		int pressDiallednumbers = menuInput.nextInt();	
+	while(back3){ 
+		switch(pressDiallednumbers){
+			case 0: back3 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 3
+
+
+                        case 4:
+
+		boolean back4 = true;
+
+		{ String eraseRecentCall = """
+
+			Erase recent call lists
+			0. Back
+
+		    """;
+		  System.out.print(eraseRecentCall);}
+		int pressEraseRecentCall = menuInput.nextInt();	
+	while(back4){ 
+		switch(pressEraseRecentCall){
+			case 0: back4 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 4
+
                         case 5: {  
 				String showCallDuration = """ 
 
@@ -739,12 +843,24 @@ while(back){
                                     } 
                                     break; 
                                 } 
-                        case 8: {String prepaidCredit = """
+                        case 8:
 
-				8. Prepaid credit
+			boolean back8 = true;
 
-			    """;   System.out.print(prepaidCredit);}
-                            break;
+		{ String prepaidCredit = """
+
+			Prepaid credit
+			0. Back
+
+		    """;
+		  System.out.print(prepaidCredit);}
+		int pressPrepaidCredit = menuInput.nextInt();	
+	while(back8){ 
+		switch(pressPrepaidCredit){
+			case 0: back8 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 8
 			default: 
                     		System.out.print("Invalid option"); 
                     		break;
