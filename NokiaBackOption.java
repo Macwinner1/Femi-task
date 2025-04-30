@@ -53,48 +53,137 @@ while(back){
                     int pressPhoneBook = menuInput.nextInt(); 
  
                     switch (pressPhoneBook) { 
-                        case 1: {String search = """
-			
-				1. Search
+                        case 1:  
 
-                            """; System.out.print(search);} 
-                            break; 
-                        case 2: {String serviceNos = """
+			boolean back1 = true;
 
-				2. Service Nos
+		{ String search = """
 
-			    """;   System.out.print(serviceNos);} 
-                            break; 
-                        case 3: {String addName = """
+			Search
+			0. Back
 
-				3. Add name
+		    """;
+		  System.out.print(search);}
+		int pressSearch = menuInput.nextInt();	
+	while(back1){ 
+		switch(pressSearch){
+			case 0: back1 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 1
 
-			    """;   System.out.print(addName);} 
-                            break; 
-                        case 4:{String erase = """
+                        case 2: 
+			boolean back2 = true;
 
-				4. Erase
+		{ String serviceNos = """
 
-			    """;   System.out.print(erase);} 
-                            break; 
-                        case 5: {String edit = """
+			Service Nos
+			0. Back
 
-				5. Edit
+		    """;
+		  System.out.print(serviceNos);}
+		int pressServiceNos = menuInput.nextInt();	
+	while(back2){ 
+		switch(pressServiceNos){
+			case 0: back2 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 2
 
-			    """;   System.out.print(edit);} 
-                            break; 
-                        case 6: {String assignTone = """
+                        case 3:
 
-				6. Assign tone
+			boolean back3 = true;
 
-			    """;   System.out.print(assignTone);} 
-                            break; 
-                        case 7: {String sendBcard = """
+		{ String addName = """
 
-				7. Send b'card
+			Add name
+			0. Back
 
-		 	    """;   System.out.print(sendBcard);} 
-                            break; 
+		    """;
+		  System.out.print(addName);}
+		int pressAddname = menuInput.nextInt();	
+	while(back3){ 
+		switch(pressAddname){
+			case 0: back3 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 3
+
+                        case 4:
+
+		boolean back4 = true;
+
+		{ String erase = """
+
+			Erase
+			0. Back
+
+		    """;
+		  System.out.print(erase);}
+		int pressErase = menuInput.nextInt();	
+	while(back4){ 
+		switch(pressErase){
+			case 0: back4 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 4
+
+                        case 5: 
+		boolean back5 = true;
+
+		{ String edit = """
+
+			Edit
+			0. Back
+
+		    """;
+		  System.out.print(edit);}
+		int pressEdit = menuInput.nextInt();	
+	while(back5){ 
+		switch(pressEdit){
+			case 0: back5 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 5
+
+                        case 6:  
+
+			boolean back6 = true;
+
+		{ String assignTone = """
+
+			Assign tone
+			0. Back
+
+		    """;
+		  System.out.print(assignTone);}
+		int pressAssigntone = menuInput.nextInt();	
+	while(back6){ 
+		switch(pressAssigntone){
+			case 0: back6 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 6			
+
+                        case 7: 
+
+		boolean back7 = true;
+
+		{ String sendBcard = """
+
+			Send b'card
+			0. Back
+
+		    """;
+		  System.out.print(sendBcard);}
+		int pressSendBcard = menuInput.nextInt();	
+	while(back7){ 
+		switch(pressSendBcard){
+			case 0: back7 = false; break;
+			default: System.out.print("Invalid option");
+			} break;
+		} break; //close loop 7
+
                         case 8: { 
                             String options = """ 
 
